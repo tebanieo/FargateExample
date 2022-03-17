@@ -4,11 +4,11 @@ Description: >
 
 Parameters:
   GitHubToken:
-    Type: String
-    Default: Redacted
+    Type: 'AWS::SSM::Parameter::Value<String>'
+    Default: FargateGitHubToken
   GitHubOwner:
     Type: String
-    Default: dcsena
+    Default: tebanieo
   ImageTag:
       Description: ECR image tag
       Type: String
@@ -18,7 +18,7 @@ Parameters:
       Default: FargateExample
   ECRRepositoryName:
       Type: String
-      Default: FargateExample
+      Default: fargateexample
 
 Resources:
 
